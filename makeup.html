@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Collection - GlowNykaa</title>
+    
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">← Home</a>
+            
+            <h4 class="m-0 fw-bold" style="color: #fc2779;">
+                <i class="bi bi-stars"></i> Makeup Collection
+            </h4>
+
+            <div class="search-box-custom">
+                <i class="bi bi-search"></i>
+                <span id="typewriterPlaceholder">Search for lipsticks...</span>
+            </div>
+
+           
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle rounded-pill px-3" type="button" data-bs-toggle="dropdown">
+                    Makeup Products
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3">
+                    <li><a class="dropdown-item py-2" href="makeupdropdown1.html">Lipsticks & Glosses</a></li>
+                    <li><a class="dropdown-item py-2" href="makeupdropdown2.html">Foundations & Concealers</a></li>
+                    <li><a class="dropdown-item py-2" href="makeupdropdown3.html">Eyeliner & Mascara</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pb-5">
+
+   
+        <h5 id="lipsticks" class="border-bottom pb-2 mb-3 mt-4 section-header-title">
+            <i class="bi bi-heart-fill"></i> Lipsticks & Glosses
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Matte Liquid Lipstick', '₹599', 'images/lipstick sub 1.jfif', 'நீண்ட நேரம் நீடிக்கும் வெல்வெட் மேட் ஃபினிஷ் கொண்ட பிரீமியம் மேக்கப் லிப்ஸ்டிக்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="lipstick 1.jfif" alt="Matte Liquid Lipstick">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Matte Liquid Lipstick</p>
+                        <span class="text-danger fw-bold fs-6">₹599</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Hydrating Lip Gloss', '₹399', 'images/lip gloss sub.jfif', 'உதடுகளுக்கு கவர்ச்சியான க்ளூயிட் ஷைனிங் தோற்றத்தைத் தரும் லைட்-வெயிட் கிளாஸ்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="lip gloss sub.jfif" alt="Hydrating Lip Gloss">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Hydrating Lip Gloss</p>
+                        <span class="text-danger fw-bold fs-6">₹399</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Velvet Crayon Lip', '₹450', 'images/Velvet Crayon Lip sub.jfif', 'எளிதாக அப்ளை செய்யக்கூடிய க்ரீமி டெக்ஸ்ச்சர் கொண்ட க்ரேயான் லிப் கலர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Velvet Crayon Lip sub.jfif" alt="Velvet Crayon Lip">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Velvet Crayon Lip</p>
+                        <span class="text-danger fw-bold fs-6">₹450</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Tinted Lip Balm', '₹249', 'images/Tinted Lip Balm sub.jfif', 'இயற்கையான நிறத்தையும் மென்மையான ஈரப்பதத்தையும் வழங்கும் வைட்டமின் பாம்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Tinted Lip Balm sub.jfif" alt="Tinted Lip Balm">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Tinted Lip Balm</p>
+                        <span class="text-danger fw-bold fs-6">₹249</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="foundations" class="border-bottom pb-2 mb-3 mt-5 section-header-title">
+            <i class="bi bi-droplet-half"></i> Foundations & Concealers
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Full Coverage Foundation', '₹899', 'images/Full Coverage Foundation sub.jfif', 'முகத்தின் கரும்புள்ளிகளை மறைத்து நாள் முழுவதும் நேர்த்தியான மேட் தோற்றத்தைத் தரும்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Full Coverage Foundation sub.jfif" alt="Full Coverage Foundation">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Full Coverage Foundation</p>
+                        <span class="text-danger fw-bold fs-6">₹899</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Matte Finish Compact', '₹349', 'images/Matte Finish Compact sub.jfif', 'எண்ணெய் பசை சருமத்தைக் கட்டுப்படுத்தி உடனடியாக பிரெஷ் லுக் தரும் காம்பேக்ட்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Matte Finish Compact sub.jfif" alt="Matte Finish Compact">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Matte Finish Compact</p>
+                        <span class="text-danger fw-bold fs-6">₹349</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Liquid Concealer', '₹499', 'images/liquid Concealer sub.jfif', 'கண்களுக்கு அடியில் உள்ள கருவளையங்களை மிக எளிதாக மறைக்கும் லிக்விட் கன்சீலர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="liquid Concealer sub.jfif" alt="Liquid Concealer">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Liquid Concealer</p>
+                        <span class="text-danger fw-bold fs-6">₹499</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Setting Powder', '₹549', 'images/Setting Powder sub.jfif', 'மேக்கப்பை கலையாமல் நீண்ட நேரம் லாக் செய்து வைக்கும் பிரீமியம் பவுடர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Setting Powder sub.jfif" alt="Setting Powder">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Setting Powder</p>
+                        <span class="text-danger fw-bold fs-6">₹549</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. EYE MAKEUP -->
+        <h5 id="eyemakeup" class="border-bottom pb-2 mb-3 mt-5 section-header-title">
+            <i class="bi bi-eye-fill"></i> Eye Makeup
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Waterproof Eyeliner', '₹299', 'images/Waterproof Eyeliner sub.jfif', 'அழியாத வாட்டர்ப்ரூப் ஃபார்முலா கொண்ட ஜெட் பிளாக் ஐலைனர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="eyeliner jpg.jfif" alt="Waterproof Eyeliner">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Waterproof Eyeliner</p>
+                        <span class="text-danger fw-bold fs-6">₹299</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Volumizing Mascara', '₹499', 'images/volumizing Mascara sub.jfif', 'கண் இமைகளை அடர்த்தியாகவும் எடுப்பாகவும் காட்டும் வொல்யூமைசிங் மஸ்காரா.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="volumizing Mascara sub.jfif" alt="Volumizing Mascara">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Volumizing Mascara</p>
+                        <span class="text-danger fw-bold fs-6">₹499</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Nude Eyeshadow Palette', '₹999', 'images/Nude Eyeshadow Palette sub.jfif', 'தினசரி மற்றும் விசேஷங்களுக்கு ஏற்ற பல கவர்ச்சிகரமான ஷேடுகள் கொண்ட ஐஷேடோ பேலட்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Nude Eyeshadow Palette sub.jfif" alt="Nude Eyeshadow Palette">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Nude Eyeshadow Palette</p>
+                        <span class="text-danger fw-bold fs-6">₹999</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Smudge Kajal', '₹199', 'images/Smudge Kajal sub.jfif', '24 மணி நேரமும் கண்களை அழகாக்கும் கறை படியாத ஸ்மட்ஜ்-ப்ரூப் காஜல்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Smudge Kajal sub.jfif" alt="Smudge Kajal">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Smudge Kajal</p>
+                        <span class="text-danger fw-bold fs-6">₹199</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+    <div id="slideOfferBox" class="slide-offer-card">
+        <div style="font-size: 26px;"><i class="bi bi-gift-fill"></i></div>
+        <div>
+            <h6 class="m-0 fw-bold">EXTRA 20% OFF!</h6>
+            <small style="opacity: 0.9;">Coupon: <strong>EXTRA20</strong></small>
+        </div>
+        <button class="offer-action-btn" onclick="dismissOffer()">CLAIM</button>
+        <button class="close-offer-btn" onclick="dismissOffer()">&times;</button>
+    </div>
+
+    <div id="productDetailPopup" class="detail-page-overlay" onclick="closePopupOnBg(event)">
+        <div class="detail-page-box">
+            <button class="modal-close-icon" onclick="closeProductPopup()">&times;</button>
+            <div class="modal-visual-side">
+                <img id="detailImg" src="" alt="Detail Preview">
+            </div>
+            <div class="modal-text-side">
+                <span style="color: #fc2779; font-weight: 700; font-size: 12px; letter-spacing: 1px;">GLOWNYKAA EXCLUSIVE</span>
+                <h3 id="detailTitle" class="mt-2 fw-bold text-dark">Product Title</h3>
+                <div id="detailPrice" class="fs-4 fw-bold text-danger my-2">₹0</div>
+                <p id="detailDesc" class="text-muted small mb-4" style="line-height: 1.6;">Product details here...</p>
+                <button class="btn-add-bag" onclick="alert('Item Added to Bag with Animation!')">
+                    <i class="bi bi-bag-heart-fill me-1"></i> ADD TO BAG
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Collection - GlowNykaa</title>
+    
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skincare.css">
+
+</head>
+<body data-page="skincare">
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top py-3 mb-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">← Home</a>
+            
+            <h4 class="m-0 fw-bold text-success">
+                <i class="bi bi-droplet-fill"></i> Skincare Collection
+            </h4>
+
+         
+            <div class="search-box-custom">
+                <i class="bi bi-search"></i>
+                <span id="typewriterPlaceholder">Search for hydrating cleansers...</span>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-success dropdown-toggle rounded-pill px-3" type="button" data-bs-toggle="dropdown">
+                    Skincare Products
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3">
+                    <li><a class="dropdown-item py-2" href="skincaredropdown1.html">Cleansers & Face Washes</a></li>
+                    <li><a class="dropdown-item py-2" href="skincaredropdown2.html">Serums & Treatments</a></li>
+                    <li><a class="dropdown-item py-2" href="skincaredropdown3.html">Sunscreens & SPF</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container pb-5">
+
+        
+        <h5 id="cleansers" class="border-bottom pb-2 mb-3 mt-4 section-header-title">
+            <i class="bi bi-water"></i> Cleansers & Face Washes
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Foaming Gel Cleanser', '₹349', 'images/foaming cleanser sub.jfif', 'சருமத்தின் அழுக்குகளை மென்மையாக நீக்கி ஆழமான புத்துணர்ச்சி அளிக்கும் ஃபோமிங் ஜெல் க்ளென்சர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="foaming cleanser sub.jfif" alt="Foaming Gel Cleanser">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Foaming Gel Cleanser</p>
+                        <span class="text-success fw-bold fs-6">₹349</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Salicylic Acid Face Wash', '₹399', 'images/Salicylic Acid Face Wash sub.jfif', 'பருக்கள் மற்றும் கரும்புள்ளிகளைக் கட்டுப்படுத்தி தெளிவான சருமம் தரும் சாலிசிலிக் ஆசிட் வாஷ்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Salicylic Acid Face Wash sub.jfif" alt="Salicylic Acid Face Wash">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Salicylic Acid Face Wash</p>
+                        <span class="text-success fw-bold fs-6">₹399</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Hydrating Gentle Wash', '₹449', 'images/Hydrating Gentle Wash sub.jfif', 'வறண்ட சருமத்தை மென்மையாக்கி ஈரப்பதத்தை தக்கவைக்கும் ஜென்டில் ஃபேஸ் வாஷ்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Hydrating Gentle Wash sub.jfif" alt="Hydrating Gentle Wash">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Hydrating Gentle Wash</p>
+                        <span class="text-success fw-bold fs-6">₹449</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Micellar Cleansing Water', '₹280', 'images/Micellar Cleansing Water sub.jfif', 'மேக்கப் மற்றும் தூசிகளை ஒரே துடைப்பில் சுலபமாக அகற்றும் மைக்கேலர் வாட்டர்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Micellar Cleansing Water sub.jfif" alt="Micellar Cleansing Water">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Micellar Cleansing Water</p>
+                        <span class="text-success fw-bold fs-6">₹280</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h5 id="serums" class="border-bottom pb-2 mb-3 mt-5 section-header-title">
+            <i class="bi bi-stars"></i> Serums & Treatments
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Vitamin C Glowing Serum', '₹699', 'images/Vitamin C Glowing Serum sub.jfif', 'சருமத்திற்கு உடனடி பளபளப்பையும் இயற்கை பொலிவையும் தரும் வைட்டமின் C சீரம்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Vitamin C Glowing Serum sub.jfif" alt="Vitamin C Glowing Serum">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Vitamin C Glowing Serum</p>
+                        <span class="text-success fw-bold fs-6">₹699</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('10% Niacinamide Serum', '₹599', 'images/10% Niacinamide Serum sub.jfif', 'சரும துளைகளை (Pores) சுருக்கி தழும்புகளை மறையச் செய்யும் நியாசினமைட் சீரம்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="ordinary serum.jfif" alt="10% Niacinamide Serum">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">10% Niacinamide Serum</p>
+                        <span class="text-success fw-bold fs-6">₹599</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Hyaluronic Acid Serum', '₹649', 'images/Hyaluronic Acid Serum sub.jfif', 'சருமத்திற்கு ஆழமான நீரேற்றம் வழங்கி இளமையான தோற்றத்தைத் தரும் ஹையலூரோனிக் சீரம்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Hyaluronic Acid Serum sub.jfif" alt="Hyaluronic Acid Serum">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Hyaluronic Acid Serum</p>
+                        <span class="text-success fw-bold fs-6">₹649</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Retinol Anti-Aging Serum', '₹799', 'images/retinol serum sub.jfif', 'சுருக்கங்களை நீக்கி சருமத்தை இறுக்கமாக்கும் பிரீமியம் ரெட்டினால் ஆன்டி-ஏஜிங் சீரம்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="retinol serum sub.jfif" alt="Retinol Anti-Aging Serum">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Retinol Anti-Aging Serum</p>
+                        <span class="text-success fw-bold fs-6">₹799</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <h5 id="sunscreens" class="border-bottom pb-2 mb-3 mt-5 section-header-title">
+            <i class="bi bi-sun-fill"></i> Sunscreens & SPF
+        </h5>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('SPF 50 Gel Sunscreen', '₹499', 'images/SPF 50 Gel Sunscreen sub.jfif', 'வெள்ளை படலம் படியாமல் சூரியனின் UV கதிர்களில் இருந்து பாதுகாக்கும் அல்ட்ரா லைட் ஜெல்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="SPF 50 Gel Sunscreen sub.jfif" alt="SPF 50 Gel Sunscreen">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">SPF 50 Gel Sunscreen</p>
+                        <span class="text-success fw-bold fs-6">₹499</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Matte Sun Fluid SPF 60', '₹599', 'images/Matte Sun Fluid SPF 60 sub.jfif', 'எண்ணெய் பசை இல்லாத முழுமையான மேட் ஃபினிஷ் தரும் SPF 60 சன் ஃப்ளூய்ட்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Matte Sun Fluid SPF 60 sub.jfif" alt="Matte Sun Fluid SPF 60">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Matte Sun Fluid SPF 60</p>
+                        <span class="text-success fw-bold fs-6">₹599</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Mineral Sunscreen SPF 30', '₹450', 'images/Mineral Sunscreen SPF 30 sub.jfif', 'சென்சிடிவ் சருமத்திற்கு ஏற்ற இயற்கையான மினரல் சன்ஸ்கிரீன் லோஷன்.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Mineral Sunscreen SPF 30 sub.jfif" alt="Mineral Sunscreen SPF 30">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Mineral Sunscreen SPF 30</p>
+                        <span class="text-success fw-bold fs-6">₹450</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card product-card h-100 p-2 text-center" onclick="openProductDetail('Sunscreen Spray SPF 50', '₹649', 'images/Sunscreen Spray SPF 50 sub.jfif', 'பயணங்களில் எளிதாக மீண்டும் மீண்டும் ஸ்ப்ரே செய்துகொள்ளும் SPF 50 சன் ஸ்ப்ரே.')">
+                    <div class="card-graphic-wrapper">
+                        <div class="liquid-layer"></div>
+                        <img src="Sunscreen Spray SPF 50 sub.jfif" alt="Sunscreen Spray SPF 50">
+                    </div>
+                    <div class="card-body p-2 mt-2">
+                        <p class="fw-semibold mb-1 small text-dark">Sunscreen Spray SPF 50</p>
+                        <span class="text-success fw-bold fs-6">₹649</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div id="slideOfferBox" class="slide-offer-card">
+        <div style="font-size: 26px;"><i class="bi bi-gift-fill"></i></div>
+        <div>
+            <h6 class="m-0 fw-bold">SKINCARE SPECIAL: 20% OFF!</h6>
+            <small style="opacity: 0.9;">Coupon: <strong>GLOWSKIN</strong></small>
+        </div>
+        <button class="offer-action-btn" onclick="dismissOffer()">CLAIM</button>
+        <button class="close-offer-btn" onclick="dismissOffer()">&times;</button>
+    </div>
+
+    
+    <div id="productDetailPopup" class="detail-page-overlay" onclick="closePopupOnBg(event)">
+        <div class="detail-page-box">
+            <button class="modal-close-icon" onclick="closeProductPopup()">&times;</button>
+            <div class="modal-visual-side">
+                <img id="detailImg" src="" alt="Detail Preview">
+            </div>
+            <div class="modal-text-side">
+                <span style="color: #198754; font-weight: 700; font-size: 12px; letter-spacing: 1px;">GLOWNYKAA DERMA CARE</span>
+                <h3 id="detailTitle" class="mt-2 fw-bold text-dark">Product Title</h3>
+                <div id="detailPrice" class="fs-4 fw-bold text-success my-2">₹0</div>
+                <p id="detailDesc" class="text-muted small mb-4" style="line-height: 1.6;">Product details here...</p>
+                <button class="btn-add-bag" onclick="alert('Item Added to Bag with Animation!')">
+                    <i class="bi bi-bag-heart-fill me-1"></i> ADD TO BAG
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
